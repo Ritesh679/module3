@@ -8,36 +8,36 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-	<header>
-		<nav id = "navbar-heading" class="navbar navbar-expand-md navbar-light bg-danger">
+	<nav id = "navbar-heading" class="navbar navbar-expand-md navbar-light bg-dark">
+		<div class="navbar-header">
  			<a class="navbar-brand" href="index.html">Food,LLC</a>
-		 	<button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-    			<span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-    		</button>  			 				
-  			<div class="collapse navbar-collapse" id="navbarNav">
-    			<ul class="nav navbar-nav navbar-toggler-right d-block d-sm-none text-center" id="menu-item">
-    			    <li class="nav-item active">
-    			    	<a class="nav-link" href="#chicken"><br class="d-none d-sm-block">Chicken</a>
-    			    </li>
-    			    <li class="nav-item">
-    			    	<a class="nav-link" href="#beef"><br class="d-none d-sm-block">Beef</a>
-    			    </li>
-    			    <li class="nav-item">
-    			    	<a class="nav-link" href="#sushi"><br class="d-none d-sm-block">Sushi</a>
-    			    </li>
-    			</ul>   				
-     		</div>
-		</nav>
-	</header>
+		 		<button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+    				<span class="navbar-toggler-icon"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    			</button>
+    	</div></nav>
 
-	<div id="main-content" class="container">
-        <h2 id="top-heading" class="text-center">Our Menu</h2>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+    			<ul class="nav navbar-nav d-block d-sm-none">
+    				<li>
+    			    	<a class="menu-item" href="#chicken">Chicken</a>
+    				</li>
+    			    <li>
+    			    	<a class="menu-item" href="#beef">Beef</a>
+    			    </li>
+    			    <li>
+    			    	<a class="menu-item" href="#sushi">Sushi</a>
+    			    </li>
+    			</ul> 
+    		</div>  
+
+	<div id="main-content" class="container-fluid">
+        <h2 id="top-heading" class="text-center main-title">Our Menu</h2>
         <div id="home-tiles" class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div id="chicken">
+                <div id="chicken" class="content-box">
                     <section>
                         <h3 class="text-center">Chicken</h3>
                         <p>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-            	<div id="beef">
+            	<div id="beef" class="content-box">
             		<section>
 						<h3 class="text-center">Beef</h3>
 						<p>
@@ -90,7 +90,7 @@
             	</div>
             </div>
             <div class="col-md col-sm col-xs">
-            	<div id="sushi">
+            	<div id="sushi" class="content-box">
 					<section>
 						<h3 class="text-center">Sushi</h3>
 						<p>
